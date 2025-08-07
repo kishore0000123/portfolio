@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Kiran Kishore</title>
+  <link rel="stylesheet" href="style.css" />
+  <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+</head>
+<body>
+
+  <!-- Header -->
+  <header>
+    <h1>My Portfolio</h1>
+    <div class="hamburger" id="hamburger">&#9776;</div>
+    <nav id="navMenu">
+      <ul>
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#skills-section">Skills</a></li>
+        <li><a href="#portfolio">Projects</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Home Section -->
+  <section id="home">
+    <div class="home-container">
+      <h1> I'm Kiran Kishore</h1>
+      <h3>Front-End Developer </h3>
+      <p>I create beautiful, functional websites with a focus on user experience and responsive design.</p>
+    <div class="button-group">
+  <a href="resume.pdf" class="btn" download>Download CV</a>
+  <a href="#contact" class="btn">Hire Me</a>
+  <a href="#contact" class="btn">Let's Talk</a>
+</div>
+
+  <div class="home-icons">
+    <a href="https://github.com/username" target="_blank" aria-label="GitHub">
+      <i class="fab fa-github"></i>
+    </a>
+    <a href="https://linkedin.com/in/username" target="_blank" aria-label="LinkedIn">
+      <i class="fab fa-linkedin"></i>
+    </a>
+    <a href="https://twitter.com/username" target="_blank" aria-label="Twitter">
+      <i class="fab fa-twitter"></i>
+    </a>
+  </div>
+    </div>
+    <div class="home-image">
+  <img src="Kiran.img.jpg" alt="Kiran Kishore" />
+    </div>
+  </section>
+
+  <!-- About Section -->
+  <section id="about" class="about-section">
+  <h2>About Me</h2>
+  <div class="about-box">
+    <p>
+  Passionate about innovation and entrepreneurship, aiming to launch a startup that leverages
+  technology to solve real-world problems.
+    </p>
+    <button id="toggleMore" class="toggle-btn">
+     Know more about me <span id="arrow"></span>
+     <i id="arrow" class="fas fa-chevron-down"></i>
+    <div id="moreContent" class="hidden" style="margin-top: 15px; padding: 12px; border-left: 3px solid #007bff background: #f9f9f9;">
+      <p style="margin-bottom: 8px;">
+        I am Kiran Kishore, currently a third-year student at SRKR College of Engineering and
+        Technology, specializing in Computer Science and Design (CSD). I previously completed my
+        diploma at Smt.B.Seetha polytechnic vishnu College, Bhimavaram.
+      </p>
+      <p style="margin-bottom: 0;">
+        My interests include exploring innovative frontend development techniques and staying
+        updated with the latest trends in technology and design.
+      </p>
+    </div>
+    <script>
+  const toggleBtn = document.getElementById('toggleMore');
+  const moreContent = document.getElementById('moreContent');
+  const arrowIcon = document.querySelector('#toggleMore .fas');
+
+  toggleBtn.addEventListener('click', function() {
+    moreContent.classList.toggle('hidden');
+    if (moreContent.classList.contains('hidden')) {
+      arrowIcon.classList.remove('fa-chevron-up');
+      arrowIcon.classList.add('fa-chevron-down');
+    } else {
+      arrowIcon.classList.remove('fa-chevron-down');
+      arrowIcon.classList.add('fa-chevron-up');
+    }
+  });
+    </script>
+  </div>
+</section>
+
+<!--skills section-->
+  <section class="skills-section">
+    <!-- Frontend Development -->
+    <div class="card">
+      <h2><span>🌐</span> Frontend Development</h2>
+      <div class="skills">
+        <img src="https://img.icons8.com/color/48/html.png"alt="HTML">
+        <img src="https://img.icons8.com/color/48/css3.png" alt="CSS">
+        <img src="https://img.icons8.com/color/48/javascript.png" alt="JavaScript">
+        <img src="https://img.icons8.com/color/48/react-native.png" alt="React">
+      </div>
+    </div>
+
+    <!-- Backend Development -->
+    <div class="card">
+      <h2><span>🖥️</span> Backend Development</h2>
+      <div class="skills">
+        <img src="https://img.icons8.com/color/48/nodejs.png" alt="Node.js">
+        <img src="https://img.icons8.com/officel/48/php-logo.png" alt="PHP">
+      </div>
+    </div>
+
+    <!-- Intermediate Programming -->
+    <div class="card">
+      <h2><span>💻</span> Intermediate Programming</h2>
+      <div class="skills">
+        <img src="https://img.icons8.com/color/48/python--v1.png" alt="Python">
+        <img src="https://img.icons8.com/color/48/java-coffee-cup-logo.png" alt="Java">
+      </div>
+    </div>
+
+    <!-- Database -->
+    <div class="card">
+      <h2><span>🗄️</span> Database</h2>
+      <div class="skills">
+        <img src="https://img.icons8.com/color/48/mongodb.png" alt="MongoDB">
+        <img src="https://img.icons8.com/color/48/mysql-logo.png" alt="MySQL">
+      </div>
+    </div>
+
+    <!-- Version Control -->
+    <div class="card">
+      <h2><span>🐙</span> Version Control</h2>
+      <div class="skills">
+        <img src="https://img.icons8.com/color/48/git.png" alt="Git">
+        <img src="https://img.icons8.com/ios-glyphs/48/ffffff/github.png" alt="GitHub">
+      </div>
+    </div>
+  </section>
+</body>
+</html>
+
+
+  <!-- Portfolio Section -->
+  <section id="portfolio" class="portfolio-section">
+    <h2>projects</h2>
+    <div class="portfolio-grid">
+      <div class="project-card">
+        <h3>Project One</h3>
+        <p>A responsive e-commerce website built with React and Node.js.</p>
+        <a href="#" target="_blank" rel="noopener noreferrer">View Demo</a>
+      </div>
+      <div class="project-card">
+        <h3>Project Two</h3>
+        <p>Portfolio website with animated UI components and smooth scrolling.</p>
+        <a href="#" target="_blank" rel="noopener noreferrer">View Demo</a>
+      </div>
+      <div class="project-card">
+        <h3>Project Three</h3>
+        <p>Blog platform with user authentication and content management.</p>
+        <a href="#" target="_blank" rel="noopener noreferrer">View Demo</a>
+      </div>
+    </div>
+  </section>
+
+  <section id="contact" class="contact-section">
+  <div class="contact-container">
+    <!-- Left: Contact Form -->
+    <div class="contact-form">
+  <h2><span>SEND A</span> MESSAGE</h2>
+  <form id="contactForm">
+    <input type="hidden" name="access_key" value="cabeacf4-4011-4fb3-a9cc-1079b0822a52">
+
+    <input type="text" name="name" placeholder="Full Name" required>
+    <input type="email" name="email" placeholder="Email Address" required>
+    <textarea name="message" rows="6" placeholder="Message" required></textarea>
+    <input type="checkbox" name="botcheck" style="display: none;" class="hidden">
+
+    <button type="submit">SEND NOW</button>
+    <div id="result" style="margin-top: 10px;"></div>
+  </form>
+
+  <script>
+    const form = document.getElementById('contactForm');
+    const result = document.getElementById('result');
+
+    form.addEventListener('submit', function(e) {
+      e.preventDefault();
+
+      result.innerHTML = "Please wait...";
+
+      const formData = new FormData(form);
+      const object = Object.fromEntries(formData);
+      const json = JSON.stringify(object);
+
+      fetch('https://api.web3forms.com/submit', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+          'Accept': 'application/json'
+        },
+        body: json
+      })
+      .then(async (response) => {
+        const json = await response.json();
+        if (response.status === 200) {
+          result.innerHTML = "✅ Message sent successfully!";
+        } else {
+          result.innerHTML = `❌ ${json.message}`;
+        }
+      })
+      .catch(() => {
+        result.innerHTML = "❌ Something went wrong. Please try again.";
+      })
+      .finally(() => {
+        form.reset();
+        setTimeout(() => {
+          result.innerHTML = "";
+        }, 3000);
+      });
+    });
+  </script>
+</div>
+
+
+    <!-- Right: Contact Info -->
+    <div class="contact-info">
+      <h2><span>GET IN</span> <span class="highlight">TOUCH TODAY</span></h2>
+      <p>Let's connect and discuss how we can work together on next project.</p>
+
+      <div class="info-box">
+        <div class="icon">&#128222;</div>
+        <div>
+          <h4>CALL</h4>
+          <p>+91 7288869162</p>
+        </div>
+      </div>
+
+      <div class="info-box">
+        <div class="icon">&#9993;</div>
+        <div>
+          <h4>Email</h4>
+            <p><a href="mailto:kishorekiran129@gmail.com">kishorekiran129@gmail.com</a></p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<script src="script.js"></script>
+
+</body>
+</html>
+
