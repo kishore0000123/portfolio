@@ -76,7 +76,7 @@ nav a:hover {
 
 /* Home Section */
 #home {
-  background-color: #0b0c10;
+  background-color: #000000;
   color: #fff;
   padding: 60px 20px;
   display: flex;
@@ -201,7 +201,7 @@ nav a:hover {
 
 /* About Section */
 #about {
-  background-color: #0b0c10;
+  background-color: #000000;
   color: #ffffff;
   padding: 80px 20px;
   text-align: center;
@@ -305,6 +305,10 @@ body {
 }
 #moreContent{
   size: 1rem;
+  margin-top: 15px;
+  padding: 12px;
+  background: #000000;
+  border-radius: 16px;
 }
 /* ===== Card Styling ===== */
 .card {
@@ -364,6 +368,22 @@ body {
 .skill-item span {
   font-size: 0.9rem;
   color: #333;
+}
+.my-skills-section {
+  margin: 40px auto;
+  padding: 32px 24px;
+  max-width: 700px;
+  background: #000000;
+  border-radius: 12px;
+  box-shadow: 0 2px 12px rgba(0,0,0,0.07);
+  text-align: center;
+}
+
+.my-skills-section h2 {
+  color: #ffffff;
+  font-size: 2rem;
+  margin-bottom: 0;
+  letter-spacing: 1px;
 }
 
 /* ===== Responsive Adjustments ===== */
